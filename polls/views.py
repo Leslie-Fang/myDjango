@@ -12,7 +12,9 @@ def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
 
 def main(request):
-    template = loader.get_template('polls/main.html')
+    #template = loader.get_template('polls/main.html')
     context = {}
-    return HttpResponse(template.render(context, request))
+    #return HttpResponse(template.render(context, request))
     #return HttpResponse('Heelo ')
+    #return render(request,template,context)
+    return render(request,'polls/main.html',context)

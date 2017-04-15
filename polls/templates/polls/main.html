@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,8 +15,11 @@
       <div id ="example"></div>
       <h1>Testing</h1>
       <p>Finally</p>
+      <button class="btn btn-primary">Log</button>
       <!--<img src="http://omdthfazl.bkt.clouddn.com/YellowMoutain1.jpeg"/>-->
-      <img src="/static/images/test2.jpeg"/>
+      <img src="{% static 'polls/images/test.png' %}"/>
+
+      <!--<img src="static/polls/images/test.png"/>-->
 
   </body>
 
